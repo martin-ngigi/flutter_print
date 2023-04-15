@@ -6,5 +6,4 @@ A new Flutter project.
 - [Documentation] (https://blog.logrocket.com/how-create-pdfs-flutter/)
 - [Sample PDF print code](https://github.com/flutterfromscratch/flutter-pdf)
 
-<br>
 - ![Sample Image](assets/sample.png)
