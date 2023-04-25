@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_print/pages/invoices.dart';
+import 'package:flutter_print/pages/page_not_found.dart';
 
 void main() {
   runApp(const MyApp());
@@ -25,7 +26,15 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: InvoicePage(),
+      // home: InvoicePage(),
+      initialRoute: '/',
+      routes: {
+        '/' : (context) => InvoicePage(),
+        '/settings' : (context) => Center(child: Text("hello settings"),)
+      },
+      onUnknownRoute: (settings) {
+        return MaterialPageRoute(builder: (_) => PageNotFound());
+      },
     );
   }
 }
